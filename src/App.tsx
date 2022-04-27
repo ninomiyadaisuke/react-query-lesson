@@ -9,6 +9,7 @@ import { StateProvider } from './context/StateProvider'
 import ReactQueryA from './components/ReactQueryA'
 import ReactQueryB from './components/ReactQueryB'
 import { MainContext } from './components/MainContext'
+import { MainRTKit } from './components/MainRTKit'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -40,6 +41,9 @@ const App: FC = () => {
               </Route>
               <Route exact path="/main-context">
                 <MainContext />
+              </Route>
+              <Route exact path="/main-rtkit">
+                <MainRTKit />
               </Route>
             </Switch>
           </Layout>
