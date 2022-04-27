@@ -8,6 +8,7 @@ import Layout from './components/Layout'
 import { StateProvider } from './context/StateProvider'
 import ReactQueryA from './components/ReactQueryA'
 import ReactQueryB from './components/ReactQueryB'
+import { MainContext } from './components/MainContext'
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -36,6 +37,9 @@ const App: FC = () => {
               </Route>
               <Route exact path="/fetch-b">
                 <ClassicalFetchB />
+              </Route>
+              <Route exact path="/main-context">
+                <MainContext />
               </Route>
             </Switch>
           </Layout>

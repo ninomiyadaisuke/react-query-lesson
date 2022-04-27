@@ -9,7 +9,7 @@ const getTasks = async () => {
 
 export const useQueryTasks = () => {
   return useQuery<Task[] >('tasks', getTasks, {
-    cacheTime: 30000,
-    staleTime: 30000,
+    cacheTime: 10000,
+    staleTime: 0,
   })
 }

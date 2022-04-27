@@ -6,7 +6,8 @@ import { ChevronDoubleRightIcon } from '@heroicons/react/solid'
 const ReactQueryA: FC = () => {
   const history = useHistory()
   const { status, data } = useQueryTasks()
-
+  console.log('rendered ReactQueryA');
+  
   if (status === 'loading') return <div>{'Loading...'}</div>
   if (status === 'error') return <div>{'Error'}</div>
 
